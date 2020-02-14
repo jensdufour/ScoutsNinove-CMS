@@ -1,0 +1,187 @@
+---
+layout: default
+title: Leiding
+---
+<main class="page blog-post-list">
+    <section class="clean-block clean-blog-list dark">
+        <div class="container">
+            <div class="block-heading">
+                <row>
+                    <div class="col-12">
+                        <h2 class="text-success">Leidingsploeg</h2>
+                        <p style="max-width: 1000px;">
+                            Onze scoutsgroep wordt gedragen door een enthousiaste groep voortrekkers! Moesten er ooit
+                            vragen zijn, twijfel dan zeker niet ons te contacteren.<br />
+                        </p>
+                        <br>
+                    </div>
+                </row>
+                <div class="btn-group flex-wrap" role="group">
+                    <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="false" aria-controls="collapseOne">
+                        Kapoenen
+                    </button>
+                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Welpen
+                    </button>
+                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Jongverkenners
+                    </button>
+                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Verkenners
+                    </button>
+                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Jinners
+                    </button>
+                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Voortrekkers
+                    </button>
+                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Groepsleiding
+                    </button>
+                </div>
+            </div>
+            <div class="block-content">
+                <div class="accordion" id="accordionTakken">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionTakken">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                {% for item in site.data.leiding.kapoenen %}
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="card clean-card text-center">
+                                        <img class="card-img-top w-100 d-block" src="{{ item.profielfoto }}" />
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{ item.naam }}</h4>
+                                            <p class="card-text">{{ item.functie }}</p>
+                                            <p class="card-text">{{ item.telefoonnummer }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTakken">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                {% for item in site.data.leiding.welpen %}
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="card clean-card text-center">
+                                        <img class="card-img-top w-100 d-block" src="{{ item.profielfoto }}" />
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{ item.naam }}</h4>
+                                            <p class="card-text">{{ item.functie }}</p>
+                                            <p class="card-text">{{ item.telefoonnummer }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionTakken">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                {% for item in site.data.leiding.jongverkenners %}
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="card clean-card text-center">
+                                        <img class="card-img-top w-100 d-block" src="{{ item.profielfoto }}" />
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{ item.naam }}</h4>
+                                            <p class="card-text">{{ item.functie }}</p>
+                                            <p class="card-text">{{ item.telefoonnummer }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#accordionTakken">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                {% for item in site.data.leiding.verkenners %}
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="card clean-card text-center">
+                                        <img class="card-img-top w-100 d-block" src="{{ item.profielfoto }}" />
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{ item.naam }}</h4>
+                                            <p class="card-text">{{ item.functie }}</p>
+                                            <p class="card-text">{{ item.telefoonnummer }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                        data-parent="#accordionTakken">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                {% for item in site.data.leiding.jinners %}
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="card clean-card text-center">
+                                        <img class="card-img-top w-100 d-block" src="{{ item.profielfoto }}" />
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{ item.naam }}</h4>
+                                            <p class="card-text">{{ item.functie }}</p>
+                                            <p class="card-text">{{ item.telefoonnummer }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionTakken">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                {% for item in site.data.leiding.oudbaas %}
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="card clean-card text-center">
+                                        <img class="card-img-top w-100 d-block" src="{{ item.profielfoto }}" />
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{ item.naam }}</h4>
+                                            <p class="card-text">{{ item.functie }}</p>
+                                            <p class="card-text">{{ item.telefoonnummer }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                        data-parent="#accordionTakken">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                {% for item in site.data.leiding.groepsleiding %}
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="card clean-card text-center">
+                                        <img class="card-img-top w-100 d-block" src="{{ item.profielfoto }}" />
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{ item.naam }}</h4>
+                                            <p class="card-text">{{ item.functie }}</p>
+                                            <p class="card-text">{{ item.telefoonnummer }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

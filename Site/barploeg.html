@@ -1,0 +1,47 @@
+---
+layout: default
+title: Barploeg
+---
+<main class="page blog-post-list">
+    <section class="clean-block clean-blog-list dark">
+        <div class="container">
+            <div class="block-heading">
+                <h2 class="text-success">Barploeg</h2>
+                <p class="text-justify" style="max-width: 800px;">
+                    In ons VT-lokaal is er altijd wel iets te beleven. Op vrijdagavond vinden er VT-activiteiten plaats,
+                    de oudscouts vinden hier hun tweede thuis en één keer in de maand wordt het opengesteld voor groot
+                    publiek tijdens het openscoutscafé.
+                    <br>
+                </p>
+            </div>
+            <div class="block-content">
+                <br>
+                <div class="h4 text-center">Dit alles zou niet mogelijk zijn zonder onze barploeg:</div>
+                <br>
+                <div class="row justify-content-center">
+                    {% for item in site.data.comites.barploeg %}
+                    <div class="col-sm-5 col-lg-3">
+                        <div class="card clean-card text-center">
+                            <img class="card-img-top w-100 d-block" src="{{ item.profielfoto }}" />
+                            <div class="card-body info">
+                                <h4 class="card-title">{{ item.naam }}</h4>
+                                <p class="card-text">{{ item.telefoonnummer }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <br>
+                <p class="text-justify">
+                    Dit geweldige team verwelkomt iedereen dan ook elke eerste vrijdag van de maand in ons eigen
+                    VT-lokaal voor een geweldige avond. (Met uitzondering van de zomermaanden)
+                    <br>
+                    <br>
+                    Meer informatie kan steeds op onze Facebookpagina gevonden worden, maar kom zeker eens kijken.
+                    Vorige edities als “Top 50 Nederlandstalige muziek”, “Beursfuif” en ons “Oudejaarsfeestje” doen ons
+                    alvast uitkijken naar meer.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>

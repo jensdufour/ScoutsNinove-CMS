@@ -1,0 +1,109 @@
+kapoenen:
+  - naam: Ward Proesmans
+    telefoonnummer: 0496 46 65 78
+    profielfoto: assets\img\profielfoto\WardProesmans.jpg
+    functie: Akela
+  - naam: Ward Beeckmans
+    telefoonnummer: 0492 77 69 46
+    profielfoto: assets\img\profielfoto\WardBeeckmans.jpg
+    functie: Assistent-leider
+  - naam: Ward Van Baelen
+    telefoonnummer: 0472 04 95 94
+    profielfoto: assets\img\profielfoto\WardVanBaelen.jpg
+    functie: Assistent-leider
+welpen:
+  - naam: Riedl Saeys
+    telefoonnummer: 0499 41 32 71
+    profielfoto: assets\img\profielfoto\RiedlSaeys.jpg
+    functie: Akela
+  - naam: Nicolas Dewandre
+    telefoonnummer: 0499 16 31 02
+    profielfoto: assets\img\profielfoto\NicolasDewandre.jpg
+    functie: Assistent-leider
+  - naam: Sander Vandenbrande
+    telefoonnummer: 0475 73 92 43
+    profielfoto: assets\img\profielfoto\SanderVandenbrande.jpg
+    functie: Assistent-leider
+  - naam: Thomas Vissers
+    telefoonnummer: 0474 08 99 19
+    profielfoto: assets\img\profielfoto\ThomasVissers.jpg
+    functie: Assistent-leider
+jongverkenners:
+  - naam: Simon Van den Brempt
+    telefoonnummer: 0471 28 03 65
+    profielfoto: assets\img\profielfoto\SimonVandenBrempt.jpg
+    functie: Master
+  - naam: Senne De Coen
+    telefoonnummer: 0479 58 37 10
+    profielfoto: assets\img\profielfoto\SenneDeCoen.jpg
+    functie: Assistent-leider
+  - naam: Joeri Moyson
+    telefoonnummer: 0473 40 67 92
+    profielfoto: assets\img\profielfoto\JoeriMoyson.jpg
+    functie: Assistent-leider
+  - naam: Luka Wauterickx
+    telefoonnummer: 0477 31 08 04
+    profielfoto: assets\img\profielfoto\LukaWauterickx.jpg
+    functie: Assistent-leider
+verkenners:
+  - naam: Ruben De Vuyst
+    telefoonnummer: 0494 54 04 73
+    profielfoto: assets\img\profielfoto\RubenDeVuyst.jpg
+    functie: Master
+  - naam: Jens Van de Velde
+    telefoonnummer: 0474 59 54 10
+    profielfoto: assets\img\profielfoto\JensVandeVelde.jpg
+    functie: Assistent-leider
+  - naam: Maximiliaan Muylaert
+    telefoonnummer: 0470 28 81 36
+    profielfoto: assets\img\profielfoto\MaximiliaanMuylaert.jpg
+    functie: Assistent-leider
+jinners:
+  - naam: Matthias Devuyst
+    telefoonnummer: 0486 79 87 14
+    profielfoto: assets\img\profielfoto\MatthiasDeVuyst.jpg
+    functie: Jinbaas
+  - naam: Senne Vanderpoorten
+    telefoonnummer: 0477 03 29 35
+    profielfoto: assets\img\profielfoto\SenneVanderpoorten.jpg
+    functie: Assistent-jin
+  - naam: Jens Du Four
+    telefoonnummer: 0477 26 51 18
+    profielfoto: assets\img\profielfoto\JensDuFour.jpg
+    functie: Assistent-jin
+  - naam: Lukas Proesmans
+    telefoonnummer: 0470 67 17 57
+    profielfoto: assets\img\profielfoto\LukasProesmans.jpg
+    functie: Assistent-jin
+oudbaas:
+  - naam: Charles Maris
+    telefoonnummer: 0498 01 85 80
+    profielfoto: assets\img\profielfoto\CharlesMaris.jpg
+    functie: Oudbaas
+  - naam: Klaas Beeckman
+    telefoonnummer: 0474 38 01 21
+    profielfoto: assets\img\profielfoto\KlaasBeeckman.jpg
+    functie: Minibaas
+  - naam: Ruben De Neve
+    telefoonnummer: 0479 90 68 92
+    profielfoto: assets\img\profielfoto\RubenDeNeve.jpg
+    functie: Minibaas
+  - naam: Ward Proesmans
+    telefoonnummer: 0496 46 65 78
+    profielfoto: assets\img\profielfoto\WardProesmans.jpg
+    functie: Minibaas
+
+
+groepsleiding:
+  - naam: Klaas Vanderpoorten
+    telefoonnummer: 0479 81 41 05
+    profielfoto: assets\img\profielfoto\KlaasVanderpoorten.jpg
+    functie: Groepsleider
+  - naam: Milan Wauterickx
+    telefoonnummer: 0470 98 72 94
+    profielfoto: assets\img\profielfoto\MilanWauterickx.jpg
+    functie: Assistent
+  - naam: Alexander Muylaert
+    telefoonnummer: 0470 45 77 82
+    profielfoto: assets\img\profielfoto\AlexanderMuylaert.jpg
+    functie: Assistent

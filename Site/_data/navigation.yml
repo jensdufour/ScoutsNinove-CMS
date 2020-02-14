@@ -1,0 +1,32 @@
+- name: Nieuws
+  link: nieuws.html
+- name: Informatie
+  subitems:
+    - name: Barploeg
+      link: barploeg.html
+    - name: Rekeningnummers
+      link: rekeningnummers.html
+    - name: VT-CD
+      link: cd.html
+    - name: Materiaalverhuur
+      link: materiaal.html
+    - name: Kansenpas
+      link: kansenpas.html
+    - name: Uniform
+      link: uniform.html
+- name: Takken
+  link: takken.html
+- name: Leiding
+  link: leiding.html
+- name: Inschrijven
+  link: inschrijven.html
+- name: Jamborette
+  link: jamborette.html
+- name: t Boekske
+  link: boeksken.html
+- name: Contact
+  subitems:
+    - name: Contact
+      link: contact.html
+    - name: Lokaal
+      link: lokaal.html

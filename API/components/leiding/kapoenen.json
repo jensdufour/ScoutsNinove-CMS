@@ -1,0 +1,26 @@
+{
+  "info": {
+    "name": "Kapoenen",
+    "icon": "user-astronaut"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Telefoonnummer": {
+      "type": "string"
+    },
+    "Profielfoto": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Functie": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "components_leiding_kapoenens"
+}

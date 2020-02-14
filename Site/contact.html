@@ -1,0 +1,39 @@
+---
+layout: default
+title: Contact
+---
+<main class="page blog-post-list">
+    <section class="clean-block clean-form dark">
+        <div class="container">
+            <div class="block-heading">
+                <h2 class="text-success">Contacteer ons</h2>
+                <p class="text-justify">Met onderstaand formulier kan je ons eenvoudig contacteren. Voor algemene vragen kan je het best bij
+                    de groepsleiding terecht. Voor site-specifieke vragen, contacteer de <a href="mailto:jens.dufour@outlook.com" class="text-success">webmaster</a>.</p>
+            </div>
+            <form action="mail.php" method="POST">
+                <div class="form-group"><label>Naam</label><input class="form-control" type="text" name="naam"/></div>
+                <div class="form-group"><label>Onderwerp</label><input class="form-control" type="text" name="onderwerp"/></div>
+                <div class="form-group">
+                    <label>Ontvanger</label>
+                    <select class="form-control" name="ontvanger">
+                        <option value="iedereen@scoutsninove.be">Groepsleiding</option>
+                        <option value="jens.dufour@outlook.com">Webmaster</option>
+                        <option value="openluchtfuif@scoutsninove.be">Openluchtfuif</option>
+                        <option value="materiaalploeg@scoutsninove.be">Materiaal</option>
+                        <option value="kapoenen@scoutsninove.be">Kapoenen</option>
+                        <option value="welpen@scoutsninove.be">Welpen</option>
+                        <option value="jongverkenners@scoutsninove.be">Jongverkenners</option>
+                        <option value="verkenners@scoutsninove.be">Verkenners</option>
+                        <option value="jinners@scoutsninove.be">Jinners</option>
+                        <option value="oudscouts@scoutsninove.be">Oudscouts</option>
+                    </select>
+                </div>
+                <div class="form-group"><label>Mail</label><input name="email" class="form-control" type="email"/></div>
+                <div class="form-group"><label>Bericht</label><textarea name="bericht" class="form-control"></textarea></div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-block" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>

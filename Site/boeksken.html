@@ -1,0 +1,437 @@
+---
+layout: default
+title: ‘t Boekske
+published: true
+---
+<main class="page blog-post-list">
+    <section class="clean-block clean-blog-list dark">
+        <div class="container">
+            <div class="block-heading">
+                <img style="width:40%" src="assets/img/boeksken/boeksken.png"/>
+                <p class="text-center" style="  max-width: 600px;">
+                    ‘t Boeksken is het 6-wekelijks programmablad van Scouts Ninove. De vergadering gaat door van 14u tot
+                    17u op zondag, tenzij anders aangegeven. Voor de Jonverkenners en Verkenners is het ook vergadering
+                    op zaterdag van 18u30 tot 19u30, tenzij anders aangegeven.<br>
+                </p>
+                <br>
+                <div class="btn-group flex-wrap" role="group">
+                    <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="false" aria-controls="collapseOne">
+                        Groepsleiding
+                    </button>
+                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Kapoenen
+                    </button>
+                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Welpen
+                    </button>
+                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Jongverkenners
+                    </button>
+                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Verkenners
+                    </button>
+                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Jinners
+                    </button>
+                    <button class="btn btn-success collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Voortrekkers
+                    </button>
+                    <button type="button" class="btn btn-success"><a href="assets/programma/latest.pdf"
+                            class="text-white">Download</a></button>
+
+                </div>
+                <br>
+            </div>
+            <div class="accordion" id="accordionTakken">
+                <div class="block-content">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionTakken">
+                        <img class="responsive" src="assets/img/boeksken/groepsleiding.jpg"/>
+                        <div class="card-body">         
+                            <div class="row justify-content-center">
+                                <div class="col-sm-12">
+                                    <div class="card clean-card text-center">
+                                        <div class="card-body info">
+                                            <p class="card-text text-justify">{{ site.data.voorwoord.groepsleiding }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTakken">
+                        <img class="responsive" src="assets/img/boeksken/kapoenen.jpg"/>
+                        {% if site.data.voorwoord.kapoenen %}
+                        <div class="card-body">      
+                            <div class="row justify-content-center">
+                                <div class="col-sm-12">
+                                    <div class="card clean-card text-center">
+                                        <div class="card-body info">
+                                            <h4 class="card-title">Voorwoord</h4>
+                                            <p class="card-text text-justify">{{ site.data.voorwoord.kapoenen }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                {% for item in site.data.programma.kapoenen %}
+                                <div class="col-sm-12 col-lg-12">
+                                    <div class="card clean-card text-center">
+                                        {% if item.afbeelding %}
+                                        <img class="card-img-top w-100 d-block" src="{{ item.afbeelding }}" />
+                                        {% endif %}
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{ item.naam }}</h4>
+                                            <p class="card-text text-justify">{{ item.beschrijving }}</p>
+                                            <p class="card-text">{{ item.telefoonnummer }}</p>
+
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <p class="card-text">
+                                                {% if item.startuur %}
+                                                {{ item.startuur }}
+                                                {% else %}
+                                                14u
+                                                {% endif %}
+                                                tot
+                                                {% if item.einduur %}
+                                                {{ item.einduur }}
+                                                {% else %}
+                                                17u
+                                                {% endif %}
+                                            </p>
+                                            <p class="card-text">
+                                                {{ item.startdatum }}
+                                                {% if item.einddatum %}
+                                                tot
+                                                {{ item.einddatum }}
+                                                {% endif %}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionTakken">
+                        <img class="responsive" src="assets/img/boeksken/welpen.jpg"/>
+                        {% if site.data.voorwoord.welpen %}
+                        <div class="card-body">        
+                            <div class="row justify-content-center">
+                                <div class="col-sm-12">
+                                    <div class="card clean-card text-center">
+                                        <div class="card-body info">
+                                            <h4 class="card-title">Voorwoord</h4>
+                                            <p class="card-text text-justify">{{ site.data.voorwoord.welpen }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                {% for item in site.data.programma.welpen %}
+                                <div class="col-sm-12 col-lg-12">
+                                    <div class="card clean-card text-center">
+                                        {% if item.afbeelding %}
+                                        <img class="card-img-top w-100 d-block" src="{{ item.afbeelding }}" />
+                                        {% endif %}
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{ item.naam }}</h4>
+                                            <p class="card-text text-justify">{{ item.beschrijving }}</p>
+                                            <p class="card-text">{{ item.telefoonnummer }}</p>
+
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <p class="card-text">
+                                                {% if item.startuur %}
+                                                {{ item.startuur }}
+                                                {% else %}
+                                                14u
+                                                {% endif %}
+                                                tot
+                                                {% if item.einduur %}
+                                                {{ item.einduur }}
+                                                {% else %}
+                                                17u
+                                                {% endif %}
+                                            </p>
+                                            <p class="card-text">
+                                                {{ item.startdatum }}
+                                                {% if item.einddatum %}
+                                                tot
+                                                {{ item.einddatum }}
+                                                {% endif %}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#accordionTakken">
+                        <img class="responsive" src="assets/img/boeksken/jvk.jpg"/>
+                        {% if site.data.voorwoord.jongverkenners %}
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-12">
+                                    <div class="card clean-card text-center">
+                                        <div class="card-body info">
+                                            <h4 class="card-title">Voorwoord</h4>
+                                            <p class="card-text text-justify">{{ site.data.voorwoord.jongverkenners }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                {% for item in site.data.programma.jongverkenners %}
+                                <div class="col-sm-12 col-lg-12">
+                                    <div class="card clean-card text-center">
+                                        {% if item.afbeelding %}
+                                        <img class="card-img-top w-100 d-block" src="{{ item.afbeelding }}" />
+                                        {% endif %}
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{ item.naam }}</h4>
+                                            <p class="card-text text-justify">{{ item.beschrijving }}</p>
+                                            <p class="card-text">{{ item.telefoonnummer }}</p>
+
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <p class="card-text">
+                                                {% if item.startuur %}
+                                                {{ item.startuur }}
+                                                {% else %}
+                                                14u
+                                                {% endif %}
+                                                tot
+                                                {% if item.einduur %}
+                                                {{ item.einduur }}
+                                                {% else %}
+                                                17u
+                                                {% endif %}
+                                            </p>
+                                            <p class="card-text">
+                                                {{ item.startdatum }}
+                                                {% if item.einddatum %}
+                                                tot
+                                                {{ item.einddatum }}
+                                                {% endif %}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                        data-parent="#accordionTakken">
+                        <img class="responsive" src="assets/img/boeksken/vk.jpg"/>
+                        {% if site.data.voorwoord.verkenners %}
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-12">
+                                    <div class="card clean-card text-center">
+                                        <div class="card-body info">
+                                            <h4 class="card-title">Voorwoord</h4>
+                                            <p class="card-text text-justify">{{ site.data.voorwoord.verkenners }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                {% for item in site.data.programma.verkenners %}
+                                <div class="col-sm-12 col-lg-12">
+                                    <div class="card clean-card text-center">
+                                        {% if item.afbeelding %}
+                                        <img class="card-img-top w-100 d-block" src="{{ item.afbeelding }}" />
+                                        {% endif %}
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{ item.naam }}</h4>
+                                            <p class="card-text text-justify">{{ item.beschrijving }}</p>
+                                            <p class="card-text">{{ item.telefoonnummer }}</p>
+
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <p class="card-text">
+                                                {% if item.startuur %}
+                                                {{ item.startuur }}
+                                                {% else %}
+                                                14u
+                                                {% endif %}
+                                                tot
+                                                {% if item.einduur %}
+                                                {{ item.einduur }}
+                                                {% else %}
+                                                17u
+                                                {% endif %}
+                                            </p>
+                                            <p class="card-text">
+                                                {{ item.startdatum }}
+                                                {% if item.einddatum %}
+                                                tot
+                                                {{ item.einddatum }}
+                                                {% endif %}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionTakken">
+                        <img class="responsive" src="assets/img/boeksken/jin.jpg"/>
+                        {% if site.data.voorwoord.jinners %}
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-12">
+                                    <div class="card clean-card text-center">
+                                        <div class="card-body info">
+                                            <h4 class="card-title">Voorwoord</h4>
+                                            <p class="card-text text-justify">{{ site.data.voorwoord.jinners }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                {% for item in site.data.programma.jinners %}
+                                <div class="col-sm-12 col-lg-12">
+                                    <div class="card clean-card text-center">
+                                        {% if item.afbeelding %}
+                                        <img class="card-img-top w-100 d-block" src="{{ item.afbeelding }}" />
+                                        {% endif %}
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{ item.naam }}</h4>
+                                            <p class="card-text text-justify">{{ item.beschrijving }}</p>
+                                            <p class="card-text">{{ item.telefoonnummer }}</p>
+
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <p class="card-text">
+                                                {% if item.startuur %}
+                                                {{ item.startuur }}
+                                                {% else %}
+                                                14u
+                                                {% endif %}
+                                                tot
+                                                {% if item.einduur %}
+                                                {{ item.einduur }}
+                                                {% else %}
+                                                17u
+                                                {% endif %}
+                                            </p>
+                                            <p class="card-text">
+                                                {{ item.startdatum }}
+                                                {% if item.einddatum %}
+                                                tot
+                                                {{ item.einddatum }}
+                                                {% endif %}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                        data-parent="#accordionTakken">
+                        <img class="responsive" src="assets/img/boeksken/vt.jpg"/>
+                        {% if site.data.voorwoord.oudbaas %}
+                        <div class="card-body">
+                            
+                            <div class="row justify-content-center">
+                                <div class="col-sm-12">
+                                    <div class="card clean-card text-center">
+                                        <div class="card-body info">
+                                            <h4 class="card-title">Voorwoord</h4>
+                                            <p class="card-text text-justify">{{ site.data.voorwoord.oudbaas }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <div class="card-body"></div>
+                        <div class="row justify-content-center">
+                            {% for item in site.data.programma.oudbaas %}
+                            <div class="col-sm-12 col-lg-12">
+                                <div class="card clean-card text-center">
+                                    {% if item.afbeelding %}
+                                    <img class="card-img-top w-100 d-block" src="{{ item.afbeelding }}" />
+                                    {% endif %}
+                                    <div class="card-body info">
+                                        <h4 class="card-title">{{ item.naam }}</h4>
+                                        <p class="card-text text-justify">{{ item.beschrijving }}</p>
+                                        <p class="card-text">{{ item.telefoonnummer }}</p>
+
+                                    </div>
+                                    <div class="card-footer text-muted">
+                                        <p class="card-text">
+                                            {% if item.startuur %}
+                                            {{ item.startuur }}
+                                            {% else %}
+                                            14u
+                                            {% endif %}
+                                            tot
+                                            {% if item.einduur %}
+                                            {{ item.einduur }}
+                                            {% else %}
+                                            17u
+                                            {% endif %}
+                                        </p>
+                                        <p class="card-text">
+                                            {{ item.startdatum }}
+                                            {% if item.einddatum %}
+                                            tot
+                                            {{ item.einddatum }}
+                                            {% endif %}
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

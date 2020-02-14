@@ -1,0 +1,27 @@
+#logo {
+    width: 20%;
+
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.hemd {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.responsive {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+
+@media (max-width: 992px) {
+   #logo {
+        width: 60%;
+    }
+}

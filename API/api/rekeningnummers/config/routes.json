@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rekeningnummers",
+      "handler": "rekeningnummers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rekeningnummers/count",
+      "handler": "rekeningnummers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rekeningnummers/:id",
+      "handler": "rekeningnummers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rekeningnummers",
+      "handler": "rekeningnummers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rekeningnummers/:id",
+      "handler": "rekeningnummers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rekeningnummers/:id",
+      "handler": "rekeningnummers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+---
+layout: default
+title: Materiaal
+---
+<main class="page testimonials">
+    <section class="clean-block clean-testimonials dark">
+        <div class="container">
+            <div class="block-heading">
+                <h2 class="text-success">Materiaalverhuur</h2>
+                <p style="max-width: 800px;">
+                    Onze materiaalploeg verhuurt (bijna) alles! Naast een ruim assortiment tenten hebben we
+                    ook klein en groot (keuken)materiaal ter beschikking. Indien u iets wilt huren of een
+                    vraag over ons materiaal hebt, kan u de materiaalploeg telefonisch contacteren.
+                    Prijzen zijn afhankelijk van aantal en de huurtermijn.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="clean-block clean-testimonials dark">
+        <div class="container">
+            <div class="block-content">
+                <div class="row justify-content-center">
+                    {% for item in site.data.comites.materiaalploeg %}
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card clean-card text-center">
+                            <img class="card-img-top w-100 d-block" src="{{ item.profielfoto }}" />
+                            <div class="card-body info">
+                                <h4 class="card-title">{{ item.naam }}</h4>
+                                <p class="card-text">{{ item.telefoonnummer }}</p>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

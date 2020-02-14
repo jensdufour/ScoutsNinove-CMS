@@ -1,0 +1,38 @@
+<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+    <div class="container">
+        <a id="logo" class="navbar-brand logo" href="index.html"><img src="assets\img\scoutsninove.png" style="width: 100%"/></a>
+        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+             id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                {% assign items = site.data.navigation%}
+                {% for item in items %}
+                {% if page.url contains item.link %}
+                {% assign class = 'active' %}
+                {% endif %}
+                {% if item.subitems %}
+                <li class="nav-item dropdown" role="presentation">
+                    <a class="nav-link dropdown-toggle" href="{{ item.link }}" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ item.name }}
+                    </a>
+                    <div class="dropdown-menu" role="presentation" aria-labelledby="navbarDropdown">
+                        {% for entry in item.subitems %}
+                        <a class="dropdown-item" href="{{entry.link}}">{{entry.name}}</a>
+                        {% endfor %}
+                    </div>
+                </li>
+                {% else %}
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
