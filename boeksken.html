@@ -3,6 +3,7 @@ layout: default
 title: ‘t Boekske
 published: true
 ---
+{% assign voorwoordAPI = strapi.collections.Voorwoords %}
 <main class="page blog-post-list">
     <section class="clean-block clean-blog-list dark">
         <div class="container">
@@ -59,7 +60,7 @@ published: true
                                 <div class="col-sm-12">
                                     <div class="card clean-card text-center">
                                         <div class="card-body info">
-                                            <p class="card-text text-justify">{{ site.data.voorwoord.groepsleiding }}</p>
+                                            <p class="card-text text-left">{{ voorwoordAPI[0].Voorwoord | markdownify }} </p>
                                         </div>
                                     </div>
                                 </div>
@@ -68,14 +69,14 @@ published: true
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTakken">
                         <img class="responsive" src="assets/img/boeksken/kapoenen.jpg"/>
-                        {% if site.data.voorwoord.kapoenen %}
+                        {% if voorwoordAPI[1].Voorwoord %}
                         <div class="card-body">      
                             <div class="row justify-content-center">
                                 <div class="col-sm-12">
                                     <div class="card clean-card text-center">
                                         <div class="card-body info">
                                             <h4 class="card-title">Voorwoord</h4>
-                                            <p class="card-text text-justify">{{ site.data.voorwoord.kapoenen }}</p>
+                                            <p class="card-text text-left">{{ voorwoordAPI[1].Voorwoord | markdownify }} </p>
                                         </div>
                                     </div>
                                 </div>
@@ -129,14 +130,14 @@ published: true
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                         data-parent="#accordionTakken">
                         <img class="responsive" src="assets/img/boeksken/welpen.jpg"/>
-                        {% if site.data.voorwoord.welpen %}
+                        {% if voorwoordAPI[2].Voorwoord %}
                         <div class="card-body">        
                             <div class="row justify-content-center">
                                 <div class="col-sm-12">
                                     <div class="card clean-card text-center">
                                         <div class="card-body info">
                                             <h4 class="card-title">Voorwoord</h4>
-                                            <p class="card-text text-justify">{{ site.data.voorwoord.welpen }}</p>
+                                            <p class="card-text text-left">{{ voorwoordAPI[2].Voorwoord | markdownify }} </p>
                                         </div>
                                     </div>
                                 </div>
@@ -190,14 +191,14 @@ published: true
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                         data-parent="#accordionTakken">
                         <img class="responsive" src="assets/img/boeksken/jvk.jpg"/>
-                        {% if site.data.voorwoord.jongverkenners %}
+                        {% if voorwoordAPI[3].Voorwoord %}
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="col-sm-12">
                                     <div class="card clean-card text-center">
                                         <div class="card-body info">
                                             <h4 class="card-title">Voorwoord</h4>
-                                            <p class="card-text text-justify">{{ site.data.voorwoord.jongverkenners }}</p>
+                                            <p class="card-text text-left">{{ voorwoordAPI[3].Voorwoord | markdownify }} </p>
                                         </div>
                                     </div>
                                 </div>
@@ -251,14 +252,14 @@ published: true
                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                         data-parent="#accordionTakken">
                         <img class="responsive" src="assets/img/boeksken/vk.jpg"/>
-                        {% if site.data.voorwoord.verkenners %}
+                        {% if voorwoordAPI[4].Voorwoord %}
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="col-sm-12">
                                     <div class="card clean-card text-center">
                                         <div class="card-body info">
                                             <h4 class="card-title">Voorwoord</h4>
-                                            <p class="card-text text-justify">{{ site.data.voorwoord.verkenners }}</p>
+                                            <p class="card-text text-left">{{ voorwoordAPI[4].Voorwoord | markdownify }} </p>
                                         </div>
                                     </div>
                                 </div>
@@ -311,14 +312,14 @@ published: true
                     </div>
                     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionTakken">
                         <img class="responsive" src="assets/img/boeksken/jin.jpg"/>
-                        {% if site.data.voorwoord.jinners %}
+                        {% if voorwoordAPI[5].Voorwoord %}
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="col-sm-12">
                                     <div class="card clean-card text-center">
                                         <div class="card-body info">
                                             <h4 class="card-title">Voorwoord</h4>
-                                            <p class="card-text text-justify">{{ site.data.voorwoord.jinners }}</p>
+                                            <p class="card-text text-left">{{ voorwoordAPI[5].Voorwoord | markdownify }} </p>
                                         </div>
                                     </div>
                                 </div>
@@ -372,7 +373,7 @@ published: true
                     <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
                         data-parent="#accordionTakken">
                         <img class="responsive" src="assets/img/boeksken/vt.jpg"/>
-                        {% if site.data.voorwoord.oudbaas %}
+                        {% if voorwoordAPI[6].Voorwoord %}
                         <div class="card-body">
                             
                             <div class="row justify-content-center">
@@ -380,7 +381,7 @@ published: true
                                     <div class="card clean-card text-center">
                                         <div class="card-body info">
                                             <h4 class="card-title">Voorwoord</h4>
-                                            <p class="card-text text-justify">{{ site.data.voorwoord.oudbaas }}</p>
+                                            <p class="card-text text-left">{{ voorwoordAPI[6].Voorwoord | markdownify }} </p>
                                         </div>
                                     </div>
                                 </div>

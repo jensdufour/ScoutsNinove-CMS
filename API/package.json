@@ -1,5 +1,5 @@
 {
-  "name": "scouts-ninove",
+  "name": "api",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -11,23 +11,23 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "knex": "<0.20.0",
-    "sqlite3": "^4.1.1",
-    "strapi": "^3.0.0-beta.18.7",
+    "strapi": "3.0.0-beta.18.7",
     "strapi-admin": "3.0.0-beta.18.7",
-    "strapi-connector-bookshelf": "3.0.0-beta.18.7",
-    "strapi-plugin-content-manager": "3.0.0-beta.18.7",
+    "strapi-utils": "3.0.0-beta.18.7",
     "strapi-plugin-content-type-builder": "3.0.0-beta.18.7",
+    "strapi-plugin-content-manager": "3.0.0-beta.18.7",
+    "strapi-plugin-users-permissions": "3.0.0-beta.18.7",
     "strapi-plugin-email": "3.0.0-beta.18.7",
     "strapi-plugin-upload": "3.0.0-beta.18.7",
-    "strapi-plugin-users-permissions": "3.0.0-beta.18.7",
-    "strapi-utils": "3.0.0-beta.18.7"
+    "strapi-connector-bookshelf": "3.0.0-beta.18.7",
+    "knex": "<0.20.0",
+    "sqlite3": "latest"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "c13b75b2-d4f7-436c-9718-aba0a42705f4"
+    "uuid": "9736d0df-a96d-4d74-a53f-2429dcaebb0f"
   },
   "engines": {
     "node": ">=10.0.0",

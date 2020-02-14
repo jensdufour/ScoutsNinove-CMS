@@ -1,0 +1,46 @@
+# Welcome to ScoutsNinove
+title: Scouts Ninove
+email: jens.dufour@outlook.com
+description: >- # this means to ignore newlines until "baseurl:"
+  De oudste, stoutste en de wijste der jeugdbewegingen!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://scoutsninove.be" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  jensdufour
+  
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-strapi
+strapi:
+    # Your API endpoint (optional, default to http://localhost:1337)
+    endpoint: http://localhost:1337
+    # Collections, key is used to access in the strapi.collections
+    # template variable
+    collections:
+        # Example for a "posts" collection
+        Rekeningnummers:
+            # Permalink used to generate the output files (eg. /articles/:id).
+            permalink: /rekeningnummers?_limit=50
+        Voorwoords:
+            # Permalink used to generate the output files (eg. /articles/:id).
+            permalink: /voorwoords?_limit=50
+        Kapoenens:
+            # Permalink used to generate the output files (eg. /articles/:id).
+            permalink: /Kapoenen?_limit=50
+        Welpens:
+            # Permalink used to generate the output files (eg. /articles/:id).
+            permalink: /Welpen?_limit=50
+        Jongverkenners:
+            # Permalink used to generate the output files (eg. /articles/:id).
+            permalink: /Jongverkenners?_limit=50
+        Verkenners:
+            # Permalink used to generate the output files (eg. /articles/:id).
+            permalink: /Verkenners?_limit=50
+        Jinners:
+            # Permalink used to generate the output files (eg. /articles/:id).
+            permalink: /Jinners?_limit=50
+        Voortrekkers:
+            # Permalink used to generate the output files (eg. /articles/:id).
+            permalink: /Voortrekkers?_limit=50

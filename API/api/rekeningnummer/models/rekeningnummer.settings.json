@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "Rekeningnummer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Rekeningnummer": {
+      "type": "string"
+    },
+    "IBAN": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "rekeningnummers"
+}

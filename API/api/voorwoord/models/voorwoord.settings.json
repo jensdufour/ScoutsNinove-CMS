@@ -1,19 +1,19 @@
 {
   "info": {
-    "name": "Rekeningnummers"
+    "name": "Voorwoord"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Rekeningnaam": {
+    "Tak": {
       "type": "string"
     },
-    "IBAN": {
-      "type": "string"
+    "Voorwoord": {
+      "type": "richtext"
     }
   },
   "connection": "default",
-  "collectionName": "rekeningnummers"
+  "collectionName": "voorwoords"
 }

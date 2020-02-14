@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `leiding` model.
+ * Lifecycle callbacks for the `voorwoord` model.
  */
 
 module.exports = {

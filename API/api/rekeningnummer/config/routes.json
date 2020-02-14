@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/rekeningnummers",
-      "handler": "rekeningnummers.find",
+      "handler": "rekeningnummer.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/rekeningnummers/count",
-      "handler": "rekeningnummers.count",
+      "handler": "rekeningnummer.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/rekeningnummers/:id",
-      "handler": "rekeningnummers.findOne",
+      "handler": "rekeningnummer.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/rekeningnummers",
-      "handler": "rekeningnummers.create",
+      "handler": "rekeningnummer.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/rekeningnummers/:id",
-      "handler": "rekeningnummers.update",
+      "handler": "rekeningnummer.update",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/rekeningnummers/:id",
-      "handler": "rekeningnummers.delete",
+      "handler": "rekeningnummer.delete",
       "config": {
         "policies": []
       }

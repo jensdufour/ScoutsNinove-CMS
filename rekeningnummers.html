@@ -15,9 +15,8 @@ title: Rekeningnummers
             <div class="block-content">
                 <ul class="list-group-flush">
                     {% for item in strapi.collections.Rekeningnummers %}
-                    <li class="list-group-item">{{ item.Rekeningnaam }} <div class="flex-fill"></div> {{ item.IBAN }}</li>
+                        <li class="list-group-item">{{ item.Rekeningnummer }} <div class="flex-fill"></div> {{ item.IBAN }}</li>
                     {% endfor %}
-
                 </ul>
             </div>
         </div>
