@@ -4,6 +4,13 @@ title: ‘t Boekske
 published: true
 ---
 {% assign voorwoordAPI = strapi.collections.Voorwoords %}
+{% assign kapoenenAPI = strapi.collections.Kapoenens %}
+{% assign welpenAPI = strapi.collections.Welpens %}
+{% assign jongverkennersAPI = strapi.collections.Jongverkenners %}
+{% assign verkennersAPI = strapi.collections.Verkenners %}
+{% assign jinnersAPI = strapi.collections.Jinners %}
+{% assign voortrekkersAPI = strapi.collections.Voortrekkers %}
+
 <main class="page blog-post-list">
     <section class="clean-block clean-blog-list dark">
         <div class="container">
@@ -85,37 +92,35 @@ published: true
                         {% endif %}
                         <div class="card-body">
                             <div class="row justify-content-center">
-                                {% for item in site.data.programma.kapoenen %}
+                                {% for item in kapoenenAPI %}
                                 <div class="col-sm-12 col-lg-12">
                                     <div class="card clean-card text-center">
-                                        {% if item.afbeelding %}
-                                        <img class="card-img-top w-100 d-block" src="{{ item.afbeelding }}" />
+                                        {% if item.Afbeelding %}
+                                            <img class="card-img-top w-100 d-block" src="{{ item.Afbeelding }}" />
                                         {% endif %}
                                         <div class="card-body info">
-                                            <h4 class="card-title">{{ item.naam }}</h4>
-                                            <p class="card-text text-justify">{{ item.beschrijving }}</p>
-                                            <p class="card-text">{{ item.telefoonnummer }}</p>
-
+                                            <h4 class="card-title">{{ item.Vergadering }}</h4>
+                                            <p class="card-text text-justify">{{ item.Beschrijving }}</p>
                                         </div>
                                         <div class="card-footer text-muted">
                                             <p class="card-text">
-                                                {% if item.startuur %}
-                                                {{ item.startuur }}
+                                                {% if item.Start %}
+                                                    {{ item.Start | date: "%H:%M"}}
                                                 {% else %}
-                                                14u
+                                                    14u
                                                 {% endif %}
                                                 tot
-                                                {% if item.einduur %}
-                                                {{ item.einduur }}
+                                                {% if item.Einde %}
+                                                    {{ item.Einde | date: "%H:%M" }}
                                                 {% else %}
                                                 17u
                                                 {% endif %}
                                             </p>
                                             <p class="card-text">
-                                                {{ item.startdatum }}
-                                                {% if item.einddatum %}
-                                                tot
-                                                {{ item.einddatum }}
+                                                {{ item.Start | date: "%d/%m/%Y" }}
+                                                {% if item.Einde %}
+                                                    tot
+                                                    {{ item.Einde | date: "%d/%m/%Y" }}
                                                 {% endif %}
                                             </p>
                                         </div>
@@ -146,37 +151,35 @@ published: true
                         {% endif %}
                         <div class="card-body">
                             <div class="row justify-content-center">
-                                {% for item in site.data.programma.welpen %}
+                                {% for item in welpenAPI %}
                                 <div class="col-sm-12 col-lg-12">
                                     <div class="card clean-card text-center">
-                                        {% if item.afbeelding %}
-                                        <img class="card-img-top w-100 d-block" src="{{ item.afbeelding }}" />
+                                        {% if item.Afbeelding %}
+                                            <img class="card-img-top w-100 d-block" src="{{ item.Afbeelding }}" />
                                         {% endif %}
                                         <div class="card-body info">
-                                            <h4 class="card-title">{{ item.naam }}</h4>
-                                            <p class="card-text text-justify">{{ item.beschrijving }}</p>
-                                            <p class="card-text">{{ item.telefoonnummer }}</p>
-
+                                            <h4 class="card-title">{{ item.Vergadering }}</h4>
+                                            <p class="card-text text-justify">{{ item.Beschrijving }}</p>
                                         </div>
                                         <div class="card-footer text-muted">
                                             <p class="card-text">
-                                                {% if item.startuur %}
-                                                {{ item.startuur }}
+                                                {% if item.Start %}
+                                                    {{ item.Start | date: "%H:%M"}}
                                                 {% else %}
-                                                14u
+                                                    14u
                                                 {% endif %}
                                                 tot
-                                                {% if item.einduur %}
-                                                {{ item.einduur }}
+                                                {% if item.Einde %}
+                                                    {{ item.Einde | date: "%H:%M" }}
                                                 {% else %}
                                                 17u
                                                 {% endif %}
                                             </p>
                                             <p class="card-text">
-                                                {{ item.startdatum }}
-                                                {% if item.einddatum %}
-                                                tot
-                                                {{ item.einddatum }}
+                                                {{ item.Start | date: "%d/%m/%Y" }}
+                                                {% if item.Einde %}
+                                                    tot
+                                                    {{ item.Einde | date: "%d/%m/%Y" }}
                                                 {% endif %}
                                             </p>
                                         </div>
@@ -207,37 +210,35 @@ published: true
                         {% endif %}
                         <div class="card-body">
                             <div class="row justify-content-center">
-                                {% for item in site.data.programma.jongverkenners %}
+                                {% for item in jongverkennersAPI%}
                                 <div class="col-sm-12 col-lg-12">
                                     <div class="card clean-card text-center">
-                                        {% if item.afbeelding %}
-                                        <img class="card-img-top w-100 d-block" src="{{ item.afbeelding }}" />
+                                        {% if item.Afbeelding %}
+                                            <img class="card-img-top w-100 d-block" src="{{ item.Afbeelding }}" />
                                         {% endif %}
                                         <div class="card-body info">
-                                            <h4 class="card-title">{{ item.naam }}</h4>
-                                            <p class="card-text text-justify">{{ item.beschrijving }}</p>
-                                            <p class="card-text">{{ item.telefoonnummer }}</p>
-
+                                            <h4 class="card-title">{{ item.Vergadering }}</h4>
+                                            <p class="card-text text-justify">{{ item.Beschrijving }}</p>
                                         </div>
                                         <div class="card-footer text-muted">
                                             <p class="card-text">
-                                                {% if item.startuur %}
-                                                {{ item.startuur }}
+                                                {% if item.Start %}
+                                                    {{ item.Start | date: "%H:%M"}}
                                                 {% else %}
-                                                14u
+                                                    14u
                                                 {% endif %}
                                                 tot
-                                                {% if item.einduur %}
-                                                {{ item.einduur }}
+                                                {% if item.Einde %}
+                                                    {{ item.Einde | date: "%H:%M" }}
                                                 {% else %}
                                                 17u
                                                 {% endif %}
                                             </p>
                                             <p class="card-text">
-                                                {{ item.startdatum }}
-                                                {% if item.einddatum %}
-                                                tot
-                                                {{ item.einddatum }}
+                                                {{ item.Start | date: "%d/%m/%Y" }}
+                                                {% if item.Einde %}
+                                                    tot
+                                                    {{ item.Einde | date: "%d/%m/%Y" }}
                                                 {% endif %}
                                             </p>
                                         </div>
@@ -268,37 +269,35 @@ published: true
                         {% endif %}
                         <div class="card-body">
                             <div class="row justify-content-center">
-                                {% for item in site.data.programma.verkenners %}
+                                {% for item in verkennersAPI %}
                                 <div class="col-sm-12 col-lg-12">
                                     <div class="card clean-card text-center">
-                                        {% if item.afbeelding %}
-                                        <img class="card-img-top w-100 d-block" src="{{ item.afbeelding }}" />
+                                        {% if item.Afbeelding %}
+                                            <img class="card-img-top w-100 d-block" src="{{ item.Afbeelding }}" />
                                         {% endif %}
                                         <div class="card-body info">
-                                            <h4 class="card-title">{{ item.naam }}</h4>
-                                            <p class="card-text text-justify">{{ item.beschrijving }}</p>
-                                            <p class="card-text">{{ item.telefoonnummer }}</p>
-
+                                            <h4 class="card-title">{{ item.Vergadering }}</h4>
+                                            <p class="card-text text-justify">{{ item.Beschrijving }}</p>
                                         </div>
                                         <div class="card-footer text-muted">
                                             <p class="card-text">
-                                                {% if item.startuur %}
-                                                {{ item.startuur }}
+                                                {% if item.Start %}
+                                                    {{ item.Start | date: "%H:%M"}}
                                                 {% else %}
-                                                14u
+                                                    14u
                                                 {% endif %}
                                                 tot
-                                                {% if item.einduur %}
-                                                {{ item.einduur }}
+                                                {% if item.Einde %}
+                                                    {{ item.Einde | date: "%H:%M" }}
                                                 {% else %}
                                                 17u
                                                 {% endif %}
                                             </p>
                                             <p class="card-text">
-                                                {{ item.startdatum }}
-                                                {% if item.einddatum %}
-                                                tot
-                                                {{ item.einddatum }}
+                                                {{ item.Start | date: "%d/%m/%Y" }}
+                                                {% if item.Einde %}
+                                                    tot
+                                                    {{ item.Einde | date: "%d/%m/%Y" }}
                                                 {% endif %}
                                             </p>
                                         </div>
@@ -328,37 +327,35 @@ published: true
                         {% endif %}
                         <div class="card-body">
                             <div class="row justify-content-center">
-                                {% for item in site.data.programma.jinners %}
+                                {% for item in jinnersAPI %}
                                 <div class="col-sm-12 col-lg-12">
                                     <div class="card clean-card text-center">
-                                        {% if item.afbeelding %}
-                                        <img class="card-img-top w-100 d-block" src="{{ item.afbeelding }}" />
+                                        {% if item.Afbeelding %}
+                                            <img class="card-img-top w-100 d-block" src="{{ item.Afbeelding }}" />
                                         {% endif %}
                                         <div class="card-body info">
-                                            <h4 class="card-title">{{ item.naam }}</h4>
-                                            <p class="card-text text-justify">{{ item.beschrijving }}</p>
-                                            <p class="card-text">{{ item.telefoonnummer }}</p>
-
+                                            <h4 class="card-title">{{ item.Vergadering }}</h4>
+                                            <p class="card-text text-justify">{{ item.Beschrijving }}</p>
                                         </div>
                                         <div class="card-footer text-muted">
                                             <p class="card-text">
-                                                {% if item.startuur %}
-                                                {{ item.startuur }}
+                                                {% if item.Start %}
+                                                    {{ item.Start | date: "%H:%M"}}
                                                 {% else %}
-                                                14u
+                                                    14u
                                                 {% endif %}
                                                 tot
-                                                {% if item.einduur %}
-                                                {{ item.einduur }}
+                                                {% if item.Einde %}
+                                                    {{ item.Einde | date: "%H:%M" }}
                                                 {% else %}
                                                 17u
                                                 {% endif %}
                                             </p>
                                             <p class="card-text">
-                                                {{ item.startdatum }}
-                                                {% if item.einddatum %}
-                                                tot
-                                                {{ item.einddatum }}
+                                                {{ item.Start | date: "%d/%m/%Y" }}
+                                                {% if item.Einde %}
+                                                    tot
+                                                    {{ item.Einde | date: "%d/%m/%Y" }}
                                                 {% endif %}
                                             </p>
                                         </div>
@@ -388,47 +385,46 @@ published: true
                             </div>
                         </div>
                         {% endif %}
-                        <div class="card-body"></div>
-                        <div class="row justify-content-center">
-                            {% for item in site.data.programma.oudbaas %}
-                            <div class="col-sm-12 col-lg-12">
-                                <div class="card clean-card text-center">
-                                    {% if item.afbeelding %}
-                                    <img class="card-img-top w-100 d-block" src="{{ item.afbeelding }}" />
-                                    {% endif %}
-                                    <div class="card-body info">
-                                        <h4 class="card-title">{{ item.naam }}</h4>
-                                        <p class="card-text text-justify">{{ item.beschrijving }}</p>
-                                        <p class="card-text">{{ item.telefoonnummer }}</p>
-
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                {% for item in voortrekkersAPI %}
+                                <div class="col-sm-12 col-lg-12">
+                                    <div class="card clean-card text-center">
+                                        {% if item.Afbeelding %}
+                                            <img class="card-img-top w-100 d-block" src="{{ item.Afbeelding }}" />
+                                        {% endif %}
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{ item.Vergadering }}</h4>
+                                            <p class="card-text text-justify">{{ item.Beschrijving }}</p>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <p class="card-text">
+                                                {% if item.Start %}
+                                                    {{ item.Start | date: "%H:%M"}}
+                                                {% else %}
+                                                    14u
+                                                {% endif %}
+                                                tot
+                                                {% if item.Einde %}
+                                                    {{ item.Einde | date: "%H:%M" }}
+                                                {% else %}
+                                                17u
+                                                {% endif %}
+                                            </p>
+                                            <p class="card-text">
+                                                {{ item.Start | date: "%d/%m/%Y" }}
+                                                {% if item.Einde %}
+                                                    tot
+                                                    {{ item.Einde | date: "%d/%m/%Y" }}
+                                                {% endif %}
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="card-footer text-muted">
-                                        <p class="card-text">
-                                            {% if item.startuur %}
-                                            {{ item.startuur }}
-                                            {% else %}
-                                            14u
-                                            {% endif %}
-                                            tot
-                                            {% if item.einduur %}
-                                            {{ item.einduur }}
-                                            {% else %}
-                                            17u
-                                            {% endif %}
-                                        </p>
-                                        <p class="card-text">
-                                            {{ item.startdatum }}
-                                            {% if item.einddatum %}
-                                            tot
-                                            {{ item.einddatum }}
-                                            {% endif %}
-                                        </p>
-                                    </div>
+                                    <br>
+                                    <br>
                                 </div>
-                                <br>
-                                <br>
+                                {% endfor %}
                             </div>
-                            {% endfor %}
                         </div>
                     </div>
                 </div>

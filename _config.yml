@@ -28,10 +28,10 @@ strapi:
             permalink: /voorwoords?_limit=50
         Kapoenens:
             # Permalink used to generate the output files (eg. /articles/:id).
-            permalink: /Kapoenen?_limit=50
+            permalink: /Kapoenens?_limit=50
         Welpens:
             # Permalink used to generate the output files (eg. /articles/:id).
-            permalink: /Welpen?_limit=50
+            permalink: /Welpens?_limit=50
         Jongverkenners:
             # Permalink used to generate the output files (eg. /articles/:id).
             permalink: /Jongverkenners?_limit=50
