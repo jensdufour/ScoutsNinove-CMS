@@ -15,7 +15,7 @@ plugins:
   - jekyll-strapi
 strapi:
     # Your API endpoint (optional, default to http://localhost:1337)
-    endpoint: http://localhost:1337
+    endpoint: http://scoutsninove.herokuapp.com/
     # Collections, key is used to access in the strapi.collections
     # template variable
     collections:
